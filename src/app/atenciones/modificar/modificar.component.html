@@ -1,0 +1,79 @@
+<h3 class="text-center m-3">Datos de Atención</h3>
+<form [formGroup]="formAtencion" *ngIf="formAtencion.value" class="mt-3">
+  <div class="mb-3">
+    <label for="" class="form-label">Paciente: </label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputPaciente"
+      formControlName="paciente"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Documento: </label>
+    <input
+      type="number"
+      class="form-control"
+      id="inputDocumento"
+      formControlName="documento"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Fecha: </label>
+    <input
+      type="date"
+      class="form-control"
+      id="inputFecha"
+      formControlName="fecha"
+    />
+    <p>La cantidad máxima de turnos por día es de: 3.</p>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Costo: </label>
+    <input
+      type="number"
+      class="form-control"
+      id="inputCosto"
+      formControlName="costo"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="selectEspecialidadId">Especialidad: </label>
+    <select
+      name="especialidadId"
+      id="especialidad"
+      formControlName="especialidadId"
+      class="form-select"
+    >
+      <option
+        *ngFor="let especialidad of especialidades"
+        value="{{ especialidad.id }}"
+      >
+        {{ especialidad.nombre }}
+      </option>
+    </select>
+  </div>
+  <ng-container *ngIf="medicos">
+    <div class="mb-3">
+      <label for="selectEspecialidadId">Medico: </label>
+      <select
+        name="medicoId"
+        id="medico"
+        formControlName="medicoId"
+        class="form-select"
+      >
+        <option *ngFor="let medico of medicos" value="medico.id">
+          {{ medico.nombre }}
+        </option>
+      </select>
+    </div>
+  </ng-container>
+
+  <p *ngIf="formAtencion.invalid && formAtencion.touched">
+    Alguno de los datos es inválido.
+  </p>
+
+  <button type="submit" class="btn btn-primary" (click)="guardar()">
+    Guardar
+  </button>
+</form>

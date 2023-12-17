@@ -1,0 +1,121 @@
+{
+  "atenciones": [
+    {
+        "id": "1",
+        "paciente": "Nicolás Andrada",
+        "documento": 48855219,
+        "especialidadId": "130",
+        "medicoId": "3",
+        "costo": 12000,
+        "fecha": "Fri Dec 22 2023 21:00:00 GMT-0300"
+    }
+  ],
+  "especialidades": [
+    {
+      "id": "100",
+      "nombre": "Cirujía"
+    },
+    {
+      "id": "110",
+      "nombre": "Pediatría"
+    },
+    {
+      "id": "120",
+      "nombre": "Ginecología"
+    },
+    {
+      "id": "130",
+      "nombre": "Oftalmología"
+    },
+    {
+      "id": "140",
+      "nombre": "Otorrinolaringología"
+    },
+    {
+      "id": "150",
+      "nombre": "Obstetricia"
+    },
+    {
+      "id": "160",
+      "nombre": "Psiquiatría"
+    },
+    {
+      "id": "170",
+      "nombre": "Neurología"
+    },
+    {
+      "id": "180",
+      "nombre": "Urología"
+    },
+    {
+      "id": "190",
+      "nombre": "Traumatología"
+    },
+    {
+        "id": "200",
+        "nombre": "Odontología"
+    }
+  ],
+  "medicos": [
+    {
+      "id": "1",
+      "nombre": "Dr. Juan Perez",
+      "dni": 33559817,
+      "idEspecialidad": "130"
+    },
+    {
+      "id": "2",
+      "nombre": "Dra. Sonia Sanchez",
+      "dni": 15558987,
+      "idEspecialidad": "140"
+    },
+    {
+        "id": "3",
+        "nombre": "Dr. Lautaro Velazquez",
+        "dni": 288533698,
+        "idEspecialidad": "130"
+    },
+    {
+        "id": "4",
+        "nombre": "Dra. María Peretti",
+        "dni": 25586333,
+        "idEspecialidad": "110"
+    },
+    {
+        "id": "5",
+        "nombre": "Dr. Nereo López",
+        "dni": 31155987,
+        "idEspecialidad": "150"
+    },
+    {
+        "id": "6",
+        "nombre": "Dra. Miriam Ramirez",
+        "dni": 19998889,
+        "idEspecialidad": "170"
+    },
+    {
+        "id": "7",
+        "nombre": "Dr. Santiago Soriano",
+        "dni": 22100256,
+        "idEspecialidad": "160"
+    },
+    {
+        "id": "8",
+        "nombre": "Dra. Soledad López",
+        "dni": 28457001,
+        "idEspecialidad": "170"
+    },
+    {
+        "id": "9",
+        "nombre": "Dra. Cinthia Jauregui",
+        "dni": 12225521,
+        "idEspecialidad": "120"
+    },
+    {
+        "id": "10",
+        "nombre": "Dra. Milagros Soledad Vicentini",
+        "dni": 26699630,
+        "idEspecialidad": "180"
+    }
+  ]
+}
