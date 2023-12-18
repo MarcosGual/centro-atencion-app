@@ -19,4 +19,16 @@ export class AtencionService {
   getAtencionById(id: string): Observable<Atencion> {
     return this.http.get<Atencion>(this.URL + '/' + id);
   }
+
+  updateAtencion(atencion: Atencion): Observable<Atencion> {
+    return this.http.put<Atencion>(this.URL + `/${atencion.id}`, atencion);
+  }
+
+  createAtencion(atencion:Atencion):Observable<Atencion>{
+    return this.http.post<Atencion>(this.URL, atencion);
+  }
+
+  deleteAtencion(idAtencion: string):Observable<Atencion>{
+    return this.http.delete<Atencion>(this.URL + '/' + idAtencion);
+  }
 }

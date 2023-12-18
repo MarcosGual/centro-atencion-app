@@ -19,8 +19,4 @@ export class EspecialidadService {
   getEspecialidadById(id: string): Observable<Atencion> {
     return this.http.get<Atencion>(this.URL + `/${id}`)
   }
-
-  updateEspecialidad(atencion: Atencion): Observable<Atencion> {
-    return this.http.put<Atencion>(this.URL + `/${atencion.id}`, atencion);
-  }
 }

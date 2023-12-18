@@ -1,13 +1,22 @@
 {
   "atenciones": [
     {
-        "id": "1",
-        "paciente": "Nicolás Andrada",
-        "documento": 48855219,
-        "especialidadId": "130",
-        "medicoId": "3",
-        "costo": 12000,
-        "fecha": "Fri Dec 22 2023 21:00:00 GMT-0300"
+      "id": "52eRissM",
+      "paciente": "Nicolás Andrada",
+      "documento": 48855219,
+      "especialidadId": "130",
+      "fecha": "2023-12-22",
+      "medicoId": "3",
+      "costo": 13000
+    },
+    {
+      "id": "gpaq2io",
+      "paciente": "Franco Gual",
+      "documento": 38995632,
+      "especialidadId": "130",
+      "fecha": "2023-12-29",
+      "medicoId": "medico.id",
+      "costo": 15000
     }
   ],
   "especialidades": [
@@ -52,8 +61,8 @@
       "nombre": "Traumatología"
     },
     {
-        "id": "200",
-        "nombre": "Odontología"
+      "id": "200",
+      "nombre": "Odontología"
     }
   ],
   "medicos": [
@@ -70,52 +79,52 @@
       "idEspecialidad": "140"
     },
     {
-        "id": "3",
-        "nombre": "Dr. Lautaro Velazquez",
-        "dni": 288533698,
-        "idEspecialidad": "130"
+      "id": "3",
+      "nombre": "Dr. Lautaro Velazquez",
+      "dni": 288533698,
+      "idEspecialidad": "130"
     },
     {
-        "id": "4",
-        "nombre": "Dra. María Peretti",
-        "dni": 25586333,
-        "idEspecialidad": "110"
+      "id": "4",
+      "nombre": "Dra. María Peretti",
+      "dni": 25586333,
+      "idEspecialidad": "110"
     },
     {
-        "id": "5",
-        "nombre": "Dr. Nereo López",
-        "dni": 31155987,
-        "idEspecialidad": "150"
+      "id": "5",
+      "nombre": "Dr. Nereo López",
+      "dni": 31155987,
+      "idEspecialidad": "150"
     },
     {
-        "id": "6",
-        "nombre": "Dra. Miriam Ramirez",
-        "dni": 19998889,
-        "idEspecialidad": "170"
+      "id": "6",
+      "nombre": "Dra. Miriam Ramirez",
+      "dni": 19998889,
+      "idEspecialidad": "170"
     },
     {
-        "id": "7",
-        "nombre": "Dr. Santiago Soriano",
-        "dni": 22100256,
-        "idEspecialidad": "160"
+      "id": "7",
+      "nombre": "Dr. Santiago Soriano",
+      "dni": 22100256,
+      "idEspecialidad": "160"
     },
     {
-        "id": "8",
-        "nombre": "Dra. Soledad López",
-        "dni": 28457001,
-        "idEspecialidad": "170"
+      "id": "8",
+      "nombre": "Dra. Soledad López",
+      "dni": 28457001,
+      "idEspecialidad": "170"
     },
     {
-        "id": "9",
-        "nombre": "Dra. Cinthia Jauregui",
-        "dni": 12225521,
-        "idEspecialidad": "120"
+      "id": "9",
+      "nombre": "Dra. Cinthia Jauregui",
+      "dni": 12225521,
+      "idEspecialidad": "120"
     },
     {
-        "id": "10",
-        "nombre": "Dra. Milagros Soledad Vicentini",
-        "dni": 26699630,
-        "idEspecialidad": "180"
+      "id": "10",
+      "nombre": "Dra. Milagros Soledad Vicentini",
+      "dni": 26699630,
+      "idEspecialidad": "180"
     }
   ]
 }

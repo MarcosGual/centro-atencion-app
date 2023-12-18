@@ -7,12 +7,14 @@ import { ListadoComponent } from './atenciones/listado/listado.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ModificarComponent } from './atenciones/modificar/modificar.component';
+import { MasIvaPipe } from './pipes/mas-iva.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
-    ModificarComponent
+    ModificarComponent,
+    MasIvaPipe
   ],
   imports: [
     BrowserModule,

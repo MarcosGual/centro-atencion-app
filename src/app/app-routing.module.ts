@@ -6,11 +6,12 @@ import { ModificarComponent } from './atenciones/modificar/modificar.component';
 const routes: Routes = [
   { path: 'listado', component: ListadoComponent },
   { path: 'modificar/:id', component: ModificarComponent },
-  { path: '', redirectTo: 'listado', pathMatch: 'full' }
+  { path: 'nueva', component: ModificarComponent },
+  { path: '', redirectTo: 'listado', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

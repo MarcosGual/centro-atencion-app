@@ -26,7 +26,9 @@
       id="inputFecha"
       formControlName="fecha"
     />
-    <p>La cantidad máxima de turnos por día es de: 3.</p>
+    <p *ngIf="formAtencion.controls['fecha'].hasError('cuotaExcedida')">
+      La cantidad máxima de turnos por día es de: 3.
+    </p>
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Costo: </label>
@@ -73,7 +75,12 @@
     Alguno de los datos es inválido.
   </p>
 
-  <button type="submit" class="btn btn-primary" (click)="guardar()">
-    Guardar
-  </button>
+  <div class="d-flex flex-direction-row justify-content-around">
+    <button type="submit" class="btn btn-primary" (click)="guardar()">
+      Guardar
+    </button>
+    <button class="btn btn-warning" [routerLink]="['/listado']">
+      Cancelar
+    </button>
+  </div>
 </form>

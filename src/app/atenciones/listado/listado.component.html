@@ -20,12 +20,25 @@
         <td>{{ atencion.documento }}</td>
         <td>{{ atencion.especialidad.nombre }}</td>
         <td>{{ atencion.costo }}</td>
-        <td>{{ atencion.costo * 1.21 }}</td>
+        <td>{{ atencion.costo | masIva }}</td>
         <td>
           {{ atencion.fecha | date : "dd/MM/yyyy" }}
         </td>
         <td>
-          <button class="btn btn-warning btn-sm" [routerLink]="['/modificar', atencion.id]">Actualizar</button>
+          <div class="d-flex flex-row">
+            <button
+              class="btn btn-warning btn-sm"
+              [routerLink]="['/modificar', atencion.id]"
+            >
+              Actualizar
+            </button>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="eliminarAtencion(atencion.id)"
+            >
+              Eliminar
+            </button>
+          </div>
           <!-- <i
             class="bi bi-pencil"
             [routerLink]="['/modificar', atencion.id]"
@@ -36,4 +49,13 @@
       </tr>
     </tbody>
   </table>
+  <a
+    name="nuevaAtencion"
+    id=""
+    class="btn btn-primary"
+    href="#"
+    role="button"
+    [routerLink]="['/nueva']"
+    >Nueva Atención</a
+  >
 </div>
