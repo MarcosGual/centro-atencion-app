@@ -42,14 +42,14 @@ export class ModificarComponent implements OnInit {
       paciente: ['', Validators.required],
       documento: ['', Validators.required],
       especialidadId: ['', Validators.required],
-      fecha: ['',{
+      fecha: ['', {
         asyncValidators: [
           this.cuotaAtencionValidator.validate.bind(
             this.cuotaAtencionValidator
           ),
         ],
         updateOn: 'blur',
-      },, Validators.required],
+      }, Validators.required],
       medicoId: ['', Validators.required],
       costo: ['', Validators.required],
     });
@@ -105,7 +105,10 @@ export class ModificarComponent implements OnInit {
   guardar() {
     if (this.formAtencion.invalid) {
       alert('Formulario inválido!');
-      console.log(this.formAtencion.errors);
+      Object.keys(this.formAtencion.controls).forEach(key => {
+        // Get errors of every form control
+        console.log(this.formAtencion.get(key), this.formAtencion.get(key)?.errors);
+      });
       return;
     }
 
@@ -129,7 +132,7 @@ export class ModificarComponent implements OnInit {
           },
           error: (error: any) => {
             alert('Error al crear atención - ' + error.message);
-            // console.log(error.message);
+            console.log(error.message);
           },
         })
       );

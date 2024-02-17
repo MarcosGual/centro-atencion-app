@@ -1,22 +1,13 @@
 {
   "atenciones": [
     {
-      "id": "52eRissM",
-      "paciente": "Nicolás Andrada",
-      "documento": 48855219,
-      "especialidadId": "130",
-      "fecha": "2023-12-22",
-      "medicoId": "3",
-      "costo": 13000
-    },
-    {
-      "id": "gpaq2io",
+      "id": "cke17hR",
       "paciente": "Franco Gual",
-      "documento": 38995632,
-      "especialidadId": "130",
-      "fecha": "2023-12-29",
-      "medicoId": "medico.id",
-      "costo": 15000
+      "documento": 39558632,
+      "especialidadId": "110",
+      "fecha": "2024-02-21",
+      "medicoId": "4",
+      "costo": 14000
     }
   ],
   "especialidades": [

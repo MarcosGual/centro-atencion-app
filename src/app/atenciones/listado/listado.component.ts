@@ -52,8 +52,9 @@ export class ListadoComponent {
       this.subscription.add(
         this.atencionService.deleteAtencion(idAtencion).subscribe({
           next: (atencion: Atencion) => {
+            this.lista = this.lista?.filter((x) => x.id !== idAtencion);
+            console.log(this.lista)
             alert('Atención eliminada exitosamente!');
-            this.lista = this.lista?.filter((x) => x.id !== atencion.id);
           },
           error: (error: any) => {
             alert('Error al eliminar atención - ' + error.message);

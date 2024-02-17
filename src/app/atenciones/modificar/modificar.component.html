@@ -64,7 +64,7 @@
         formControlName="medicoId"
         class="form-select"
       >
-        <option *ngFor="let medico of medicos" value="medico.id">
+        <option *ngFor="let medico of medicos" value="{{ medico.id }}">
           {{ medico.nombre }}
         </option>
       </select>
